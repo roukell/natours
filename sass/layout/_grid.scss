@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
 
   //  select everything except the last child
@@ -15,7 +14,6 @@
   // $ end
   // * contain
   [class^="col-"] {
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {
