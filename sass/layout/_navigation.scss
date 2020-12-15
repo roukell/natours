@@ -106,7 +106,8 @@
   &__icon {
     position: relative;
     margin-top: 3.5rem;
-
+    background-color: $color-grey-dark-3;
+    
     &,
     &::before,
     &::after {
