@@ -1,3 +1,18 @@
+/*
+0 - 600px:     phone
+600 - 900px:   tablet protrait
+900 - 1200px:  tablet landscape
+[1200 - 1800px] is where our normal styles apple
+1800px +:      big desktop 
+
+breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -36,6 +51,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 /* setting overal font properties. we do it in body because the properties related to font are usually inherited */
 body {
