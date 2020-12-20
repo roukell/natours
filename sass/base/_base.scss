@@ -18,6 +18,8 @@ html {
   @include respond(tap-port) {
     font-size: 50% //1rem = 8px; 8px/16px = 50%
   }
+  // the later will media query will be applied
+  // order is very important
 
   @include respond(big-desktop) {
     font-size: 75% //1rem = 12px; 12px/16px = 75%
@@ -28,4 +30,9 @@ html {
 body {
   /* box-sizing changes the box model so that the borders and paddings are no longer added to the total width or the total height that we specify for a box */
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tap-port) {
+    padding: 0;
+  }
 }
