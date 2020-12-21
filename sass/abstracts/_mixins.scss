@@ -37,15 +37,15 @@ Order: Base + Typography > general layout + grid > page layout > components
         @media (max-width: 37.5em) { @content }; // 600px
     }
 
-    @if $breakpoint == tab-port {
+    @if $breakpoint == tabport {
         @media (max-width: 56.25em) { @content }; // 900px
     }
 
-    @if $breakpoint == tab-land {
+    @if $breakpoint == tabland {
         @media (max-width: 75em) { @content }; // 1200px
     }
 
-    @if $breakpoint == big-desktop {
+    @if $breakpoint == bigdesktop {
         @media (min-width: 112.5em) { @content }; // 1800px
     }
 }
