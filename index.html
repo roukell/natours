@@ -263,7 +263,7 @@
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
                     <source src="img/video.webm" type="video/webm">
-                        Your browser is not supported!
+                    Your browser is not supported!
                 </video>
             </div>
 
@@ -287,7 +287,10 @@
                             I had the best week with my family
                         </h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, repudiandae. Iste veniam optio nesciunt voluptates nulla, explicabo dolorem quaerat facilis doloribus temporibus illum quas tempore molestias pariatur numquam sed perferendis, temporibus illum quas tempore molestias.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, repudiandae. Iste veniam
+                            optio nesciunt voluptates nulla, explicabo dolorem quaerat facilis doloribus temporibus
+                            illum quas tempore molestias pariatur numquam sed perferendis, temporibus illum quas tempore
+                            molestias.
                         </p>
                     </div>
                 </div>
@@ -306,7 +309,10 @@
                             WOW! My life is completely different now
                         </h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, repudiandae. Iste veniam optio nesciunt voluptates nulla, explicabo dolorem quaerat facilis doloribus temporibus illum quas tempore molestias pariatur numquam sed perferendis, temporibus illum quas tempore molestias.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, repudiandae. Iste veniam
+                            optio nesciunt voluptates nulla, explicabo dolorem quaerat facilis doloribus temporibus
+                            illum quas tempore molestias pariatur numquam sed perferendis, temporibus illum quas tempore
+                            molestias.
                         </p>
                     </div>
                 </div>
@@ -365,8 +371,15 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <!-- srcset allows the browser to choose the best img to use according to the screen that is used by the user to display the webpage, 1x = low-res, 2x = high-res -->
-            <img srcset="img/logo-green-1x 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+
+            <picture class="footer__logo">
+                <!-- art direction: using different images for different view port -->
+                <!-- media allows us to do media query -->
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <!-- srcset allows the browser to choose the best img to use according to the screen that is used by the user to display the webpage, 1x = low-res, 2x = high-res (aka desity switching)-->
+                <img srcset="img/logo-green-1x 1x, img/logo-green-2x.png 2x" alt="Full logo">
+            </picture>
+
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -383,7 +396,9 @@
             <div class="col-1-of-2">
                 <p class="footer__copyright">
                     Build <a href="#" class="footer__link">Online project</a>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aspernatur deserunt blanditiis tempora vero exercitationem impedit dolorem? Rerum illo error, voluptate illum, asperiores fugit hic officiis eveniet minima quam omnis.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aspernatur deserunt blanditiis
+                    tempora vero exercitationem impedit dolorem? Rerum illo error, voluptate illum, asperiores fugit hic
+                    officiis eveniet minima quam omnis.
                     This is a <a href="#" class="footer__link">Practice project</a>
                 </p>
             </div>
@@ -405,7 +420,15 @@
                     Important &ndash; Please read before booking
                 </h3>
                 <p class="popup__text">
-                    Nunc blandit finibus libero, sed pulvinar purus dapibus in. Nulla nec orci ac urna elementum efficitur. Nulla vel quam accumsan, suscipit arcu eget, ornare mauris. Suspendisse dui urna, rutrum sit amet volutpat malesuada, viverra venenatis nulla. Nulla iaculis, mauris sed convallis auctor, eros sem ultrices risus, eget luctus tortor ex sed ligula. Curabitur gravida accumsan rhoncus. Integer id nisl ac tortor tristique mattis at sit amet libero. Vestibulum vel nibh sed lectus dictum hendrerit non non augue. Sed ullamcorper lectus ac tristique volutpat. Aenean rhoncus, orci semper egestas tempus, sem quam volutpat libero, eget rhoncus ipsum elit vel nisl. Nunc diam dui, blandit ut sodales ut, pellentesque at mauris. Sed et ultricies ante. Maecenas non massa sed urna accumsan laoreet quis eget erat. Morbi ac est ultricies, placerat diam quis, ultrices lectus.
+                    Nunc blandit finibus libero, sed pulvinar purus dapibus in. Nulla nec orci ac urna elementum
+                    efficitur. Nulla vel quam accumsan, suscipit arcu eget, ornare mauris. Suspendisse dui urna, rutrum
+                    sit amet volutpat malesuada, viverra venenatis nulla. Nulla iaculis, mauris sed convallis auctor,
+                    eros sem ultrices risus, eget luctus tortor ex sed ligula. Curabitur gravida accumsan rhoncus.
+                    Integer id nisl ac tortor tristique mattis at sit amet libero. Vestibulum vel nibh sed lectus dictum
+                    hendrerit non non augue. Sed ullamcorper lectus ac tristique volutpat. Aenean rhoncus, orci semper
+                    egestas tempus, sem quam volutpat libero, eget rhoncus ipsum elit vel nisl. Nunc diam dui, blandit
+                    ut sodales ut, pellentesque at mauris. Sed et ultricies ante. Maecenas non massa sed urna accumsan
+                    laoreet quis eget erat. Morbi ac est ultricies, placerat diam quis, ultrices lectus.
                 </p>
                 <a href="#" class="btn btn--green">Book now</a>
             </div>
