@@ -78,9 +78,32 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <!-- in sizes: 20vw means photo1 is 20% of the view width. when at 900px, photo1 is 171px, 171/900 = roughly 20%. Last bit 300px is the default size. This part takes care of both resolution and density switching-->
+                        
+                        <img
+                        srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                        sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                        class="composition__photo composition__photo--p1"
+                        src="img/nat-1-large.jpg" 
+                        alt="Photo 1"
+                        >
+                        <img
+                        srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                        sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                        class="composition__photo composition__photo--p2"
+                        src="img/nat-2-large.jpg" 
+                        alt="Photo 2"
+                        >
+                        <img
+                        srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                        sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                        class="composition__photo composition__photo--p3"
+                        src="img/nat-3-large.jpg" 
+                        alt="Photo 3"
+                        >
+                        <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -375,9 +398,11 @@
             <picture class="footer__logo">
                 <!-- art direction: using different images for different view port -->
                 <!-- media allows us to do media query -->
-                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                    media="(max-width: 37.5em)">
                 <!-- srcset allows the browser to choose the best img to use according to the screen that is used by the user to display the webpage, 1x = low-res, 2x = high-res (aka desity switching)-->
-                <img srcset="img/logo-green-1x 1x, img/logo-green-2x.png 2x" alt="Full logo">
+                <img srcset="img/logo-green-1x 1x, img/logo-green-2x.png 2x" alt="Full logo"
+                    src="img/logo-green-2x.png">
             </picture>
 
         </div>
