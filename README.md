@@ -11,7 +11,8 @@
   HTML, CSS, Sass
 
   ## Table of Contents
-  * [Installation](#installation)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
   * [Contributing](#Contributing)
   * [Questions](#Questions)
 
@@ -19,6 +20,15 @@
   To install necessary dependencies, run the following command:
 
       npm i
+
+  ## Usage
+  To run development:  
+
+      npm run start
+
+  To run build:  
+
+      npm run build:css
       
   ## Contributing
   Designed by Jonas Schmedtmann
